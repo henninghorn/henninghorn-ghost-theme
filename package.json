@@ -1,10 +1,10 @@
 {
-    "name": "ghost-starter-theme",
+    "name": "henninghorn-ghost-theme",
     "description": "A custom theme for ghost",
-    "demo": "https://starter.ghost.io",
+    "demo": "https://henninghorn",
     "version": "1.0.0",
     "engines": {
-        "ghost": ">=4.0.0"
+        "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "screenshots": {
@@ -20,15 +20,15 @@
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Henning Horn",
+        "email": "hh@henninghorn.dk",
+        "url": "https://henninghorn.dk"
     },
     "gpm": {
         "type": "theme",
         "categories": [
             "Minimal",
-            "Magazine"
+            "Blog"
         ]
     },
     "keywords": [
@@ -38,10 +38,8 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
+        "url": "https://github.com/henninghorn/henninghorn-ghost-theme.git"
     },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
     "devDependencies": {
         "autoprefixer": "10.4.13",
         "beeper": "2.1.0",
@@ -85,5 +83,8 @@
                 "width": 2000
             }
         }
+    },
+    "dependencies": {
+        "tailwindcss": "^3.2.4"
     }
 }

@@ -1,6 +1,9 @@
 const {series, watch, src, dest, parallel} = require('gulp');
 const pump = require('pump');
 
+// TailwindCSS
+const tailwind = require('tailwindcss')
+
 // gulp plugins and utils
 var livereload = require('gulp-livereload');
 var postcss = require('gulp-postcss');
@@ -39,6 +42,7 @@ function css(done) {
     var processors = [
         easyimport,
         colorFunction(),
+        tailwind(),
         autoprefixer(),
         cssnano()
     ];
